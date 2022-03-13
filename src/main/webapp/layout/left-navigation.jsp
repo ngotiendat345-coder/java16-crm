@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <div class="page__header mb-0">
     <div class="container page__container">
         <div class="navbar navbar-secondary navbar-light navbar-expand-sm p-0">
@@ -8,37 +10,37 @@
             <div class="navbar-collapse collapse" id="navbarsExample03">
                 <ul class="nav navbar-nav flex">
                     <li class="nav-item">
-                        <a class="nav-link active" href="dashboard.html">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/home" >
                             Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            Project
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="${pageContext.request.contextPath}/role" >
+                            Role
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
-                                Manage Project
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/role" >
+                                Manage Role
                             </a>
-                            <a class="dropdown-item" href="#">
-                                Project Create Project
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/role/add" >
+                                Create Role
                             </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <a href="${pageContext.request.contextPath}/user"  class="nav-link dropdown-toggle" data-toggle="dropdown">
                             User
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/user" >
                                 User List
                             </a>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="${pageContext.request.contextPath}/user/add" >
                                 Create User
                             </a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Task</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/project" >Task</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components</a>
